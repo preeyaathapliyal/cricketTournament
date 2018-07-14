@@ -31,6 +31,14 @@ $this->breadcrumbs=array(
 		'name',
 		'club_state',
 		array(
+       'header'=>'Total Match', 
+        'value'=>'Team::getTotalMatch($data->team_id)',
+        ),
+        array(
+      	 	'header'=>'Total Score', 
+        	'value'=>'Team::getTotalScore($data->team_id)',
+        ),
+        array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
 			'template' => '{view}',
 		),
